@@ -14,7 +14,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Fulfillment - Code to Cloud - HPE Matt
+          Fulfillment - Code to Cloud - HPE Splatt
         </a>
       </header>
     </div>
