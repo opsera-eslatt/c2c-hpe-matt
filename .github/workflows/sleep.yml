@@ -1,0 +1,13 @@
+name: Sleep Routine
+
+on:
+  schedule:
+    - cron: '15,45 * * * *'
+
+jobs:
+  sleep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep N Seconds
+        run:
+          sleep $(shuf -i 1-30 -n 1)
