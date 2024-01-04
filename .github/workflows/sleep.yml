@@ -10,4 +10,9 @@ jobs:
     steps:
       - name: Sleep N Seconds
         run:
-          sleep $(shuf -i 1-30 -n 1)
+          SECONDS=$(shuf -i 1-30 -n 1)
+          if [[ $(($SECONDS % 2)) -eq 0 ]]; then
+            echo "ERROR: even numbers are unacceptable"
+            exit 1
+          fi
+          sleep $SECONDS
